@@ -424,7 +424,7 @@ Let's continue to expand our GraphQL API by adding the following to the
 [source,java]
 ----
     @Query
-    @Description("Get a Films from a galaxy far far away")
+    @Description("Get a Film by id")
     public Film getFilm(@Name("filmId") int id) {
         return service.getFilm(id);
     }
